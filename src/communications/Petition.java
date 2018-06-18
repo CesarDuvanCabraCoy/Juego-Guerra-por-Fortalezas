@@ -1,5 +1,5 @@
 package communications;
 
-public enum Petitions {
+public enum Petition {
 
 }

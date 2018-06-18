@@ -2,9 +2,11 @@ package utils;
 
 import java.awt.Container;
 import java.awt.GridBagConstraints;
+import java.util.ArrayList;
 
 import javax.swing.JLabel;
 
+import models.Fort;
 import views.ConstantsGUI;
 
 public class Util {
@@ -17,4 +19,11 @@ public class Util {
 		}
 	}
 	
+	public static String[] getListNamesForts(ArrayList<Fort> forts) {
+		String[] listForts = new String[forts.size()];
+		for (int i = 0; i < listForts.length; i++) {
+			listForts[i] = forts.get(i).getName();
+		}
+		return listForts;
+	}
 }
