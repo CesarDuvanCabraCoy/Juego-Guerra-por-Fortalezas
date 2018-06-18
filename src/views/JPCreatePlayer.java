@@ -33,6 +33,7 @@ public class JPCreatePlayer extends JPanel{
 	private JButton jbAvatarTwo;
 	private JButton jbAvatarThree;
 	private JButton jbAvatarFour;
+	private JButton jbAccept;
 	private MainController mainController;
 	private Image image;
 	
@@ -119,13 +120,25 @@ public class JPCreatePlayer extends JPanel{
 		addButtonAvatar(jbAvatarTwo, ConstantsGUI.URL_AVATAR_TWO, ConstantsGUI.ID_AVATAR_TWO, 4, gbc);
 		addButtonAvatar(jbAvatarThree, ConstantsGUI.URL_AVATAR_THREE, ConstantsGUI.ID_AVATAR_THREE, 6, gbc);
 		addButtonAvatar(jbAvatarFour, ConstantsGUI.URL_AVATAR_FOUR, ConstantsGUI.ID_AVATAR_FOUR, 8, gbc);
+		
+		jbAccept = new JButton(ConstantsGUI.JB_ACCEPT_CREATE_PLAYER);
+		jbAccept.setActionCommand(JBActions.ACCEPT_CREATE_PLAYER.toString());
+		jbAccept.addActionListener(mainController);
+		jbAccept.setBackground(Color.WHITE);
+		gbc.gridx = 4;
+		gbc.gridy = 8;
+		gbc.gridheight = 1;
+		gbc.gridwidth = 4;
+		gbc.weighty = 2;
+		this.add(jbAccept, gbc);
 	}
 
-	private void addButtonAvatar(JButton jb, String urlImageAvatar, String nameButton, int x, GridBagConstraints gbc) {
+	private void addButtonAvatar(JButton jb, String urlImageAvatar, int nameButton, int x, GridBagConstraints gbc) {
 		jb = new JButton(new ImageIcon(getClass().getResource(urlImageAvatar)));
 		jb.setActionCommand(JBActions.CHOOSE_AVATAR.name());
 		jb.addActionListener(mainController);
 		jb.setBackground(Color.WHITE);
+		jb.setName(String.valueOf(nameButton));
 		gbc.gridx = x;
 		gbc.gridy = 5;
 		gbc.gridheight = 3;
@@ -147,8 +160,15 @@ public class JPCreatePlayer extends JPanel{
 		super.paint(g);
 	}
 	
-	public static void main(String[] args) {
-		JFCreatePlayer jf = new JFCreatePlayer(null, new String[] {"EEUU, COLOMBIA"});
-		jf.setVisible(true);
+	public int getId() {
+		return (int) jlId.getValue();
+	}
+	
+	public String getName() {
+		return jtfName.getText();
+	}
+	
+	public String getFort() {
+		return jcbForts.getSelectedItem().toString();
 	}
 }

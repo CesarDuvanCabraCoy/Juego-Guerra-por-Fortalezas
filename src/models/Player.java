@@ -9,11 +9,13 @@ public class Player {
 	private String name;
 	private Client client;
 	private int score;
-	private String avatar;
+	private Fort fort;
+	private int avatar;
 	
-	public Player(int id, String name, String avatar, String ip, int port) throws IOException {
+	public Player(int id, String name, Fort fort, int avatar, String ip, int port) throws IOException {
 		this.id = id;
 		this.name = name;
+		this.fort = fort;
 		this.avatar = avatar;
 		this.client = new Client(ip, port);
 		this.score = 0;
@@ -35,7 +37,11 @@ public class Player {
 		return score;
 	}
 	
-	public String getAvatar() {
+	public int getAvatar() {
 		return avatar;
+	}
+	
+	public Fort getFort() {
+		return fort;
 	}
 }

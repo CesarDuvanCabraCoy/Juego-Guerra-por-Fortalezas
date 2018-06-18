@@ -26,4 +26,23 @@ public class Util {
 		}
 		return listForts;
 	}
+	
+	public static String getNameAvatarById(int idAvatar) {
+		String name = "";
+		switch (idAvatar) {
+		case 1:
+			name = ConstantsGUI.NA_ONE;
+			break;
+		case 2:
+			name = ConstantsGUI.NA_TWO;
+			break;
+		case 3:
+			name = ConstantsGUI.NA_THREE;
+			break;
+		case 4:
+			name = ConstantsGUI.NA_FOUR;
+			break;
+		}
+		return name;
+	}
 }

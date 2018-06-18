@@ -20,15 +20,23 @@ public class ConstantsGUI {
 	public static final String JL_FORT = "Fortaleza: ";
 	public static final String T_JF_CREATE_PLAYER = "Crear guerrero";
 	public static final int T_JF_WIDTH_CP = 600;
-	public static final int T_JF_HEIGHT_CP = 550;
+	public static final int T_JF_HEIGHT_CP = 570;
 	public static final String JL_CHOOSE_AVATAR = "Escoge tu avatar";
 	public static final String URL_AVATAR_ONE = "avatarOne.png";
-	public static final String ID_AVATAR_ONE = "avOne";
-	public static final String ID_AVATAR_TWO = "avTwo";
+	public static final int ID_AVATAR_ONE = 1;
+	public static final int ID_AVATAR_TWO = 2;
 	public static final String URL_AVATAR_TWO = "avatarTwo.png";//hiei
-	public static final String ID_AVATAR_THREE = "avThree";
+	public static final int ID_AVATAR_THREE = 3;
 	public static final String URL_AVATAR_THREE = "avatarThree.png";//kratos
-	public static final String ID_AVATAR_FOUR = "avFour";
+	public static final int ID_AVATAR_FOUR = 4;
 	public static final String URL_AVATAR_FOUR = "avatarFour.png";//Madara sin abanico
+	public static final String JB_ACCEPT_CREATE_PLAYER = "Iniciar juego";
+	public static final String SUCCESSFUL = "Exitoso";
+	public static final String AVATAR_CHOOSE = "El avatar escogido es: ";
+	public static final String NA_ONE = "ADONIS";
+	public static final String NA_TWO = "DAVEN";
+	public static final String NA_THREE = "VIGGO";
+	public static final String NA_FOUR = "SIGURD";
+	
 
 }

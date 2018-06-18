@@ -19,11 +19,24 @@ public class JFCreatePlayer extends JFrame{
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setLayout(new BorderLayout());
+		this.setResizable(false);
 		init(forts);
 	}
 	
 	private void init(String[] forts) {
 		jpCreatePlayer = new JPCreatePlayer(mainController, forts);
 		this.add(jpCreatePlayer, BorderLayout.CENTER);
+	}
+
+	public String getFort() {
+		return jpCreatePlayer.getFort();
+	}
+	
+	public String getNamePlayer() {
+		return jpCreatePlayer.getName();
+	}
+	
+	public int getId() {
+		return jpCreatePlayer.getId();
 	}
 }
