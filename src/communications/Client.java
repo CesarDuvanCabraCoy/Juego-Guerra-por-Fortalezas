@@ -37,4 +37,12 @@ public class Client extends Thread{
 	private void manageResponse(String response) {
 	
 	}
+
+	public void sendCreateClient(int id, String name, int x, int y) throws IOException {
+		output.writeUTF(Petition.C_CREATE_CLIENT.name());
+		output.writeInt(id);
+		output.writeUTF(name);
+		output.writeInt(x);
+		output.writeInt(y);
+	}
 }

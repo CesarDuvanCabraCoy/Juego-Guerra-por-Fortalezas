@@ -59,6 +59,7 @@ public class MainController implements ActionListener{
 		try {
 			Fort fort = managerGame.searchFort(jfCreatePlayer.getFort());
 			managerGame.createPlayer(jfCreatePlayer.getId(), jfCreatePlayer.getNamePlayer(), fort, idAvatar, ip, port);
+			managerGame.sendToServerCreatePlayer();
 		} catch (ExcFortNotFound e) {
 			JOptionPane.showMessageDialog(null, e.getMessage(), ConstantsMOD.WRONG, JOptionPane.WARNING_MESSAGE);
 		} catch (IOException e) {

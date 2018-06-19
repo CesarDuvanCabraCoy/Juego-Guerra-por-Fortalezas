@@ -19,6 +19,10 @@ public class ManagerGame {
 	public void createPlayer(int id, String name, Fort fort, int avatar, String ip, int port) throws IOException {
 		player = new Player(id, name, fort, avatar, ip, port);
 	}
+	
+	public void sendToServerCreatePlayer() throws IOException {
+		player.sendCreatePlayer();
+	}
 
 	private void generateForts() {
 		listForts.add(new Fort(0, ConstantsMOD.FORT_EEUU, ConstantsMOD.URL_FORT_EEUU));
@@ -39,5 +43,9 @@ public class ManagerGame {
 	
 	public ArrayList<Fort> getListForts() {
 		return listForts;
+	}
+	
+	public Player getPlayer() {
+		return player;
 	}
 }

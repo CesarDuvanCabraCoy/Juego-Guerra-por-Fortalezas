@@ -55,7 +55,7 @@ public class JPCreateClient extends JPanel{
 		gbc.gridwidth = 4;
 		this.add(jlIP, gbc);
 		
-		jtfIP = new JTextField("192.168.56.1");
+		jtfIP = new JTextField("localhost");
 		gbc.gridx = 5;
 		gbc.gridy = 1;
 		gbc.gridheight = 1;
