@@ -12,7 +12,6 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JSpinner;
 import javax.swing.JTextField;
 import controllers.JBActions;
 import controllers.MainController;
@@ -22,8 +21,6 @@ public class JPCreatePlayer extends JPanel{
 
 	private static final long serialVersionUID = 1L;
 	private JLabel jlInfo;
-	private JLabel jlIdInfo;
-	private JSpinner jlId;
 	private JLabel jlName;
 	private  JTextField jtfName;
 	private JLabel jlFort;
@@ -58,23 +55,7 @@ public class JPCreatePlayer extends JPanel{
 		gbc.gridheight = 1;
 		gbc.gridwidth = 10;
 		this.add(jlInfo, gbc);
-		
-		jlIdInfo = new JLabel(ConstantsGUI.JL_ID);
-		jlIdInfo.setFont(new Font(ConstantsGUI.TYPE_LETTER, Font.BOLD, 30));
-		jlIdInfo.setForeground(Color.WHITE);
-		gbc.gridx = 1;
-		gbc.gridy = 1;
-		gbc.gridheight = 1;
-		gbc.gridwidth = 4;
-		this.add(jlIdInfo, gbc);
-		
-		jlId = new JSpinner();
-		gbc.gridx = 6;
-		gbc.gridy = 1;
-		gbc.gridheight = 1;
-		gbc.gridwidth = 4;
-		this.add(jlId, gbc);
-		
+				
 		jlName = new JLabel(ConstantsGUI.JL_NAME);
 		jlName.setFont(new Font(ConstantsGUI.TYPE_LETTER, Font.BOLD, 30));
 		jlName.setForeground(Color.WHITE);
@@ -158,10 +139,6 @@ public class JPCreatePlayer extends JPanel{
 		this.setOpaque(false);
 		drawImage(g);
 		super.paint(g);
-	}
-	
-	public int getId() {
-		return (int) jlId.getValue();
 	}
 	
 	public String getName() {

@@ -36,7 +36,4 @@ public class JFCreatePlayer extends JFrame{
 		return jpCreatePlayer.getName();
 	}
 	
-	public int getId() {
-		return jpCreatePlayer.getId();
-	}
 }

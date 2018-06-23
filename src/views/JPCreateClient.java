@@ -46,7 +46,6 @@ public class JPCreateClient extends JPanel{
 		gbc.gridwidth = 8;
 		this.add(jlInfo, gbc);
 		
-		
 		jlIP = new JLabel(ConstantsGUI.JL_IP);
 		jlIP.setFont(new Font(ConstantsGUI.TYPE_LETTER, Font.BOLD, 18));
 		gbc.gridx = 1;

@@ -20,7 +20,7 @@ public class ConstantsGUI {
 	public static final String JL_FORT = "Fortaleza: ";
 	public static final String T_JF_CREATE_PLAYER = "Crear guerrero";
 	public static final int T_JF_WIDTH_CP = 600;
-	public static final int T_JF_HEIGHT_CP = 570;
+	public static final int T_JF_HEIGHT_CP = 490;
 	public static final String JL_CHOOSE_AVATAR = "Escoge tu avatar";
 	public static final String URL_AVATAR_ONE = "avatarOne.png";
 	public static final int ID_AVATAR_ONE = 1;
@@ -37,6 +37,21 @@ public class ConstantsGUI {
 	public static final String NA_TWO = "DAVEN";
 	public static final String NA_THREE = "VIGGO";
 	public static final String NA_FOUR = "SIGURD";
+	public static final String WRONG = "Error";
+	public static final String T_JD_LOADING = "Esperando por confirmación";
+	public static final int JD_LOADING_WIDTH = 300;
+	public static final int JD_LOADING_HEIGHT = 200;
+	public static final String LOADING = "Cargando...";
+	public static final String URL_WALLPAPER_MAIN = "wallpaperMain.png";
+	public static final String TITLE_JF_MAIN = "Guerra por fortalezas";
+	public static final String URL_IMAGES = "src" + System.getProperty("file.separator")+ "views"+ System.getProperty("file.separator");
+	public static final int WIDTH_AVATAR = 40;
+	public static final int HEIGHT_AVATAR = 60;
+	public static final String URL_FORT_ONE = "eeuuFort.png";
+	public static final String URL_FORT_TWO = "colombiaFort.png";
+	public static final int WIDTH_FORT = 250;
+	public static final int HEIGHT_FORT = 200;
+	public static final String URL_FORT_THREE = "franceFort.png";
 	
 
 }
